@@ -7,10 +7,10 @@ class CoCarClassFactory :
 public:
 	CoCarClassFactory();
 	virtual ~CoCarClassFactory();
-	//CoCarClassFactory(const CoCarClassFactory& factory) = delete;
-	//CoCarClassFactory(const CoCarClassFactory&& factory) = delete;
-	//CoCarClassFactory operator=(const CoCarClassFactory& factory) = delete;
-	//CoCarClassFactory operator=(const CoCarClassFactory&& factory) = delete;
+	CoCarClassFactory(const CoCarClassFactory& factory) = delete;
+	CoCarClassFactory(const CoCarClassFactory&& factory) = delete;
+	CoCarClassFactory operator=(const CoCarClassFactory& factory) = delete;
+	CoCarClassFactory operator=(const CoCarClassFactory&& factory) = delete;
 
 	// IUnknown
 	STDMETHODIMP QueryInterface(const IID& riid, void** ppvObject) override;

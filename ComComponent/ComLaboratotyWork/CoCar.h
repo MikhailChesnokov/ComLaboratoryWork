@@ -9,10 +9,10 @@ class CoCar :
 public:
 	CoCar();
 	virtual ~CoCar();
-	//CoCar(const CoCar& coCar) = delete;
-	//CoCar(const CoCar&& coCar) = delete;
-	//CoCar operator=(const CoCar& cocar) = delete;
-	//CoCar operator=(const CoCar&& cocar) = delete;
+	CoCar(const CoCar& coCar) = delete;
+	CoCar(const CoCar&& coCar) = delete;
+	CoCar operator=(const CoCar& cocar) = delete;
+	CoCar operator=(const CoCar&& cocar) = delete;
 
 	// IUnknown
 	STDMETHODIMP QueryInterface(const IID& riid, void** ppvObject) override;
